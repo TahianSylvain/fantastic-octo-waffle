@@ -1,0 +1,1 @@
+.promotion-block{--bg:#fff;--mt:0;--mr:auto;--mb:var(--mt);--ml:var(--mr);--pr:0;--pl:var(--pr);--pt:var(--pr);--pb:var(--pr);background-color:var(--bg);margin:var(--mt) var(--mr) var(--mb) var(--ml);padding:var(--pt) var(--pr) var(--pb) var(--pl)}.promotion-block__inner>:last-of-type{margin:0}
