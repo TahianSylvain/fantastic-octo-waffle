@@ -1,15 +1,9 @@
-import ReactBpmn from 'react-bpmn'
 import "boosted/dist/js/boosted.bundle.min.js"
 import {UploadExcel} from "./Components/ExcelCollector"
-// import {ModelerComponent} from "./Components/Modeler"
+import {SampleComponent} from "./Components/Modeler"
 
 
-function App() {
-  function onShown() { console.log('diagram shown') }
-  function onLoading() { console.log('diagram loading') }
-  function onError(err) { console.log('failed to show diagram'+' '+err) }
-  
-return <>
+function App() { return <>
   <header>
 <nav className="navbar navbar-dark bg-dark navbar-expand-lg" 
     aria-label="Global navigation - No title with nav-under example">
@@ -45,10 +39,6 @@ return <>
     <div id="global-header-2.2" 
     className="navbar-collapse collapse d-sm-flex global-header-2">
       <ul className="navbar-nav">
-        <li className="nav-item"><a className="nav-link active" 
-          href="#" aria-label="EN English version" aria-current="true">EN</a></li>
-        <li className="nav-item"><a className="nav-link" 
-          href="#" aria-label="FR Version française" hrefLang="fr" lang="fr">FR</a></li>
         <li className="nav-item">
           <a href="#" className="nav-link nav-icon">            
             <svg width="1.5rem" height="1.5rem" fill="currentColor" 
@@ -63,9 +53,7 @@ return <>
 </nav>
   </header>
   <main>
-    {<ReactBpmn url="/diagram.bpmn2" onShown={ onShown }
-      onLoading={ onLoading } onError={ onError } />}
-
+    <SampleComponent></SampleComponent>
     <div className="bloc_div asm_form_div col-sm-12">
       <div className="container mt-4 mb-4" id="tiny_little">
         <form className="needs-validation mb-5 col-12" noValidate="">
@@ -100,30 +88,16 @@ return <>
             </div>
             <div className="col-12">
               <div className="mb-3">
-                <label htmlFor="firstName" id="firstNameLabel"
-                  className="form-label is-required">First name
-                    <span className="visually-hidden"> (required)</span></label>
-                <input type="text" className="form-control"
-                  id="firstName" aria-labelledby="firstNameLabel firstNameFeedback" 
-                  autoComplete="given-name" required=""/>
-                <div className="valid-feedback">
-                  Looks good!
-                </div>
-                <div id="firstNameFeedback" className="invalid-feedback">
-                  Please enter a valid first name.
-                </div>
-              </div>
-              <div className="mb-3">
-                <label htmlFor="lastName" id="lastNameLabel" 
-                  className="form-label is-required">Last name
+                <label htmlFor="Username" id="UsernameLabel" 
+                  className="form-label is-required">User name
                     <span className="visually-hidden"> (required)</span></label>
                 <input type="text" className="form-control" 
-                  id="lastName" aria-labelledby="lastNameLabel lastNameFeedback"
+                  id="Username" aria-labelledby="UsernameLabel UsernameFeedback"
                   autoComplete="family-name" required=""/>
                 <div className="valid-feedback">
                   Looks good!
                 </div>
-                <div id="lastNameFeedback" className="invalid-feedback">
+                <div id="UsernameFeedback" className="invalid-feedback">
                   Please enter a valid last name.
                 </div>
               </div>
@@ -353,7 +327,6 @@ return <>
       <li><a className="nav-link" href="#">Cookie policy</a></li>
     </ul>
   </div>
-  </footer>
-  </> 
+  </footer></> 
 }
 export default App
