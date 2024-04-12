@@ -115,7 +115,7 @@ function App() { return <>
                   Please provide a valid email.
                 </div>
               </div>
-              <div className="mb-3">
+            {/* <div className="mb-3">
                 <label htmlFor="country" id="countryLabel" 
                   className="form-label is-required">Country
                   <span className="visually-hidden"> (required)</span></label>
@@ -184,7 +184,7 @@ function App() { return <>
                 <div id="messageFeedback" className="invalid-feedback">
                   Please enter a valid message.
                 </div>
-              </div>
+              </div> */}
               <button type="submit" className="btn btn-primary mt-2">Submit</button>
             </div>
           </div>
@@ -236,12 +236,6 @@ function App() { return <>
             <ul className="navbar-nav">
               <li><a className="nav-link" href="#" aria-describedby="headingOne5">Subcategory</a></li>
               <li><a className="nav-link" href="#" aria-describedby="headingOne5">Subcategory</a></li>
-              <li><a className="nav-link" href="#" aria-describedby="headingOne5">Subcategory</a></li>
-              <li><a className="nav-link" href="#" aria-describedby="headingOne5">Subcategory</a></li>
-              <li><a className="nav-link" href="#" aria-describedby="headingOne5">Subcategory</a></li>
-              <li><a className="nav-link" href="#" aria-describedby="headingOne5">Subcategory</a></li>
-              <li><a className="nav-link" href="#" aria-describedby="headingOne5">Subcategory</a></li>
-              <li><a className="nav-link" href="#" aria-describedby="headingOne5">Subcategory</a></li>
             </ul>
           </div>
         </div>
@@ -254,12 +248,6 @@ function App() { return <>
           </h3>
           <div id="collapseTwo5" className="container-xxl accordion-collapse collapse" data-bs-parent="#accordion5">
             <ul className="navbar-nav">
-              <li><a className="nav-link" href="#" aria-describedby="headingTwo5">Subcategory</a></li>
-              <li><a className="nav-link" href="#" aria-describedby="headingTwo5">Subcategory</a></li>
-              <li><a className="nav-link" href="#" aria-describedby="headingTwo5">Subcategory</a></li>
-              <li><a className="nav-link" href="#" aria-describedby="headingTwo5">Subcategory</a></li>
-              <li><a className="nav-link" href="#" aria-describedby="headingTwo5">Subcategory</a></li>
-              <li><a className="nav-link" href="#" aria-describedby="headingTwo5">Subcategory</a></li>
               <li><a className="nav-link" href="#" aria-describedby="headingTwo5">Subcategory</a></li>
               <li><a className="nav-link" href="#" aria-describedby="headingTwo5">Subcategory</a></li>
             </ul>
@@ -276,12 +264,6 @@ function App() { return <>
             <ul className="navbar-nav">
               <li><a className="nav-link" href="#" aria-describedby="headingThree5">Subcategory</a></li>
               <li><a className="nav-link" href="#" aria-describedby="headingThree5">Subcategory</a></li>
-              <li><a className="nav-link" href="#" aria-describedby="headingThree5">Subcategory</a></li>
-              <li><a className="nav-link" href="#" aria-describedby="headingThree5">Subcategory</a></li>
-              <li><a className="nav-link" href="#" aria-describedby="headingThree5">Subcategory</a></li>
-              <li><a className="nav-link" href="#" aria-describedby="headingThree5">Subcategory</a></li>
-              <li><a className="nav-link" href="#" aria-describedby="headingThree5">Subcategory</a></li>
-              <li><a className="nav-link" href="#" aria-describedby="headingThree5">Subcategory</a></li>
             </ul>
           </div>
         </div>
@@ -294,12 +276,6 @@ function App() { return <>
           </h3>
           <div id="collapseFour5" className="container-xxl accordion-collapse collapse" data-bs-parent="#accordion5">
             <ul className="navbar-nav">
-              <li><a className="nav-link" href="#" aria-describedby="headingFour5">Subcategory</a></li>
-              <li><a className="nav-link" href="#" aria-describedby="headingFour5">Subcategory</a></li>
-              <li><a className="nav-link" href="#" aria-describedby="headingFour5">Subcategory</a></li>
-              <li><a className="nav-link" href="#" aria-describedby="headingFour5">Subcategory</a></li>
-              <li><a className="nav-link" href="#" aria-describedby="headingFour5">Subcategory</a></li>
-              <li><a className="nav-link" href="#" aria-describedby="headingFour5">Subcategory</a></li>
               <li><a className="nav-link" href="#" aria-describedby="headingFour5">Subcategory</a></li>
               <li><a className="nav-link" href="#" aria-describedby="headingFour5">Subcategory</a></li>
             </ul>

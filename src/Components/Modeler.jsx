@@ -12,7 +12,7 @@ export const SampleComponent = () => {
   // ), [diagram])
 
   return <div id='chart-modeler'><ul><li><h3>{diagram[0]}</h3></li></ul>
-    <div id="attach"> <img src={diagram[1]} alt="sample"/> </div>
+    <div id="attach"> <img src={diagram[1]} alt="sample" id="diag" /> </div>
   </div>
 }/*
 import Axios from 'axios';
